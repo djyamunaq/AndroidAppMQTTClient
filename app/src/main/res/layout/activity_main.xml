@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonUp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/buttonEnter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="W" />
+
+    <Button
+        android:id="@+id/buttonDown"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/buttonEnter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="S" />
+
+    <Button
+        android:id="@+id/buttonLeft"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/buttonEnter"
+        android:layout_marginRight="10dp"
+        android:text="A" />
+
+    <Button
+        android:id="@+id/buttonRight"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/buttonEnter"
+        android:layout_marginLeft="10dp"
+        android:text="D" />
+
+    <Button
+        android:id="@+id/buttonEnter"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerInParent="true"
+        android:text="#" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ipInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0.0.0.0"
+        android:text="0.0.0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/portInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ipInput"
+        android:hint="8080"
+        android:text="8080" />
+
+    <TextView
+        android:id="@+id/ipOutput"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/portInput"
+        android:text=""/>
+    <TextView
+        android:id="@+id/portOutput"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ipOutput"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/buttonServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/portOutput"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp"
+        android:text="set server" />
+</RelativeLayout>
